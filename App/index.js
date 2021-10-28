@@ -4,12 +4,15 @@ import Row from './components/Row';
 import Button from './components/Button';
 
 export default function App() {
+    const [ currVal, setCurrVal ] = useState("0");
+    const [ operator, setOperator ] = useState(null);
+    const [ prevVal, setPrevVal ] = useState(null);
 
   return (
     <View style={styles.container}>
     <StatusBar barStyle="light-content" />
     <View>
-      <Text style={styles.value}>75</Text>
+      <Text style={styles.value}>{currVal}</Text>
       <Row>
           <Button text="C" theme="secondary" onPress={() => alert('Eita')} />
           <Button text="+/-" theme="secondary" onPress={() => alert('Eita')} />
@@ -55,7 +58,7 @@ const styles = StyleSheet.create({
       fontSize: 100,
       textAlign: "right",
       marginRight: 20,
-      marginBottom: 10
+      marginBottom: 10,
   }
 });
 
