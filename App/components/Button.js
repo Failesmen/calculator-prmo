@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     },
     buttonBold: {
         backgroundColor: "#F53D35"
-    }
+    },
+
 
 })
