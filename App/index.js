@@ -12,7 +12,7 @@ export default function App() {
   const pressButton = (type, value) => {
     if(type === "number") {
         setCurrVal(currVal + value);
-    } 
+    }
 
     if(type === "operator") {
         setOperator(value);
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   },
   value: {
       color: "#fff",
-      fontSize: 80,
+      fontSize: 100,
       textAlign: "right",
       marginRight: 20,
       marginBottom: 10
