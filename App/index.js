@@ -50,8 +50,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#202020',
+    backgroundColor: '#000',
     justifyContent: "flex-end",
+    paddingTop: 100  // para ajustar o topo antes do 0, caso o flex end não consiga.
   },
   value: {
       color: "#fff",
