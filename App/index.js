@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
-import Row from './components/Row';
-import Button from './components/Button';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import Row from './comp';
+import Button from './components/Button.js';
 
 export default function App() {
   const [ currVal, setCurrVal ] = useState("0");
@@ -68,7 +68,7 @@ export default function App() {
   return (
     <View style={styles.container}>
     <StatusBar barStyle="light-content" />
-    <SafeAreaView>
+    <View>
       <Text style={styles.value}>{currVal}</Text>
       <Row>
           <Button text="C" theme="secondary" onPress={() => pressButton("clear")} />
@@ -99,7 +99,7 @@ export default function App() {
           <Button text="." onPress={() => pressButton("number",".")} />
           <Button text="=" theme="bold" onPress={() => pressButton("equal")} />
       </Row>
-    </SafeAreaView>
+    </View>
     </View>
   );
 }
