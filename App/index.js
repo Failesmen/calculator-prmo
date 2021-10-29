@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import Row from './comp';
-import Button from './components/Button.js';
+import Row from './components/Row';
+import Button from './components/Button';
+
 
 export default function App() {
   const [ currVal, setCurrVal ] = useState("0");
